@@ -7,7 +7,7 @@ my_class = my_classes.classes
 for file in os.listdir('/home/kevin/Downloads'):
     try:
         filename = os.fsdecode(file)
-        source = f'/home/kevin/Documents/Uni/{filename}'
+        source = f'/home/kevin/Downloads/{filename}'
         
         for item in my_class:
             if(item[0] in filename.lower()):
@@ -56,5 +56,6 @@ for file in os.listdir('/home/kevin/Downloads'):
                     shutil.move(source, destination)
                 case _:
                     print("the case is not made for: " +filename)
-    except:
+    except Exception as e:
+        print(e)
         print("Das muss so, trust me bro")
