@@ -4,10 +4,10 @@ import my_classes
 
 my_class = my_classes.classes
 
-for file in os.listdir('./files/'):
+for file in os.listdir('/home/kevin/Downloads'):
     try:
         filename = os.fsdecode(file)
-        source = f'./files/{filename}'
+        source = f'/home/kevin/Documents/Uni/{filename}'
         
         for item in my_class:
             if(item[0] in filename.lower()):
