@@ -9,3 +9,4 @@ _TODO_ :
 - [X] Use proper directories
 - [ ] In future use a PI Zero W so it sorts to Google Drive
 - [ ] Fix trust me bro
+- [ ] Add filesorter to bin so easy run from terminal
